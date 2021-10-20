@@ -10,7 +10,7 @@ class StudentsManagementApplicationTests {
 	@Test
 	void contextLoads() {
 
-		//Assertions.fail("Oops failed");
+		/*Assertions.fail("Oops failed");*/
 	}
 
 
