@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  backend:
+    image: "amine78800/fullstack_17_oct_from_pom:3"
+    ports:
+      - "80:8081"
+    restart: "always"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
