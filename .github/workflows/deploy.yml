@@ -74,7 +74,7 @@ jobs:
           text: ':white_check_mark: pushed amine78800/fullstack_17_oct_from_pom:${{steps.build-number.outputs.BUILD_NUMBER}} to docker hub... https://hub.docker.com/repository/docker/amine78800/fullstack_17_oct_from_pom'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
-      - name: Update and commit app version in docker-compose.yaml
+      - name: Update and commit app version in docker-compose.yml
         run: |
           BUILD_NUMBER=${{steps.build-number.outputs.BUILD_NUMBER}}
           echo -e "Current elasticbeanstalk/docker-compose.yml\n$(cat elasticbeanstalk/docker-compose.yml)"
