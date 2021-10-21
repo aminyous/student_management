@@ -71,7 +71,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          text: ':white_check_mark: pushed amine78800/fullstack_17_oct_from_pom:${{steps.build-number.outputs.BUILD_NUMBER}} to docker hub... https://hub.docker.com/repository/docker/amine78800/fullstack_17_oct_from_pom'
+          text: ':white_check_mark: pushed amine78800/fullstack_17_oct_from_pom:${{steps.build-number.outputs.BUILD_NUMBER}} to docker hub...... https://hub.docker.com/repository/docker/amine78800/fullstack_17_oct_from_pom'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
       - name: Update and commit app version in docker-compose.yml
